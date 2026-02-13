@@ -19,7 +19,11 @@ The system consists of two main components:
 2.  **Transcriber:** A worker job triggered by Pub/Sub messages that processes the audio/video files using WhisperX and saves the results.
 
 ```mermaid
-[Source (e.g., Drive)] -> [Activator (Cloud Run)] -> [Pub/Sub Topic] -> [Transcriber (Cloud Run)] -> [Storage (Output)]
+graph LR
+    Source[Source (e.g., Drive)] --> Activator[Activator (Cloud Run)]
+    Activator --> Topic[Pub/Sub Topic]
+    Topic --> Transcriber[Transcriber (Cloud Run)]
+    Transcriber --> Storage[Storage (Output)]
 ```
 
 ## 📂 Project Structure
