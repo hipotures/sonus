@@ -20,10 +20,10 @@ The system consists of two main components:
 
 ```mermaid
 graph LR
-    Source[Source (e.g., Drive)] --> Activator[Activator (Cloud Run)]
-    Activator --> Topic[Pub/Sub Topic]
-    Topic --> Transcriber[Transcriber (Cloud Run)]
-    Transcriber --> Storage[Storage (Output)]
+    Source["Source (e.g., Drive)"] --> Activator["Activator (Cloud Run)"]
+    Activator --> Topic["Pub/Sub Topic"]
+    Topic --> Transcriber["Transcriber (Cloud Run)"]
+    Transcriber --> Storage["Storage (Output)"]
 ```
 
 ## 📂 Project Structure
