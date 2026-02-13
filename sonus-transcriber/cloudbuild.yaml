@@ -1,0 +1,45 @@
+steps:
+  # Build the container
+  - name: "gcr.io/cloud-builders/docker"
+    args:
+      [
+        "build",
+        "-t",
+        "${_REGISTRY}/transcriber:${SHORT_SHA}",
+        "-t",
+        "${_REGISTRY}/transcriber:${TAG_NAME}",
+        "-t",
+        "${_REGISTRY}/transcriber:latest",
+        ".",
+      ]
+
+  # Push the container
+  - name: "gcr.io/cloud-builders/docker"
+    args: ["push", "${_REGISTRY}/transcriber:${SHORT_SHA}"]
+  - name: "gcr.io/cloud-builders/docker"
+    args: ["push", "${_REGISTRY}/transcriber:${TAG_NAME}"]
+  - name: "gcr.io/cloud-builders/docker"
+    args: ["push", "${_REGISTRY}/transcriber:latest"]
+
+  # Update Cloud Run job
+  - name: "gcr.io/google.com/cloudsdktool/cloud-sdk"
+    entrypoint: gcloud
+    args:
+      - "run"
+      - "jobs"
+      - "update"
+      - "transcriber"
+      - "--image=${_REGISTRY}/transcriber:latest"
+      - "--region=${_REGION}"
+
+# Configure options
+options:
+  logging: CLOUD_LOGGING_ONLY
+
+# Configure the timeout
+timeout: 1800s
+
+# Substitutions
+substitutions:
+  _REGISTRY: "REGION-docker.pkg.dev/${PROJECT_ID}/sonus"
+  _REGION: "REGION"

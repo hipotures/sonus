@@ -1,0 +1,55 @@
+steps:
+  # Install dependencies and run tests
+  - name: "python:3.11"
+    entrypoint: pip
+    args:
+      [
+        "install",
+        "-r",
+        "requirements.txt",
+        "-r",
+        "requirements-test.txt",
+        "--user",
+        "-e",
+        ".",
+      ]
+
+  # Build the container
+  - name: "gcr.io/cloud-builders/docker"
+    args:
+      [
+        "build",
+        "-t",
+        "${_REGISTRY}/activator:${SHORT_SHA}",
+        "-t",
+        "${_REGISTRY}/activator:${TAG_NAME}",
+        "-t",
+        "${_REGISTRY}/activator:latest",
+        ".",
+      ]
+
+  # Push the container
+  - name: "gcr.io/cloud-builders/docker"
+    args: ["push", "${_REGISTRY}/activator:${SHORT_SHA}"]
+  - name: "gcr.io/cloud-builders/docker"
+    args: ["push", "${_REGISTRY}/activator:${TAG_NAME}"]
+  - name: "gcr.io/cloud-builders/docker"
+    args: ["push", "${_REGISTRY}/activator:latest"]
+
+  # Update Cloud Run job
+  - name: "gcr.io/google.com/cloudsdktool/cloud-sdk"
+    entrypoint: gcloud
+    args:
+      - "run"
+      - "jobs"
+      - "update"
+      - "activator"
+      - "--image=${_REGISTRY}/activator:${TAG_NAME}"
+      - "--region=${_REGION}"
+
+# Configure options
+options:
+  logging: CLOUD_LOGGING_ONLY
+
+# Configure the timeout
+timeout: 1800s

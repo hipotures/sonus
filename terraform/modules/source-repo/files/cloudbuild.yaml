@@ -1,0 +1,47 @@
+steps:
+  # Install dependencies and run tests
+  - name: "python:3.9"
+    entrypoint: pip
+    args: ["install", "-r", "requirements.txt", "-r", "requirements-test.txt"]
+
+  - name: "python:3.9"
+    entrypoint: python
+    args: ["-m", "pytest", "--junitxml=test-reports/junit.xml"]
+    env:
+      - "PYTHONPATH=/workspace"
+
+  # Build the container
+  - name: "gcr.io/cloud-builders/docker"
+    args:
+      [
+        "build",
+        "-t",
+        "${_REGION}-docker.pkg.dev/${PROJECT_ID}/sonus/activator:${_VERSION}",
+        "-t",
+        "${_REGION}-docker.pkg.dev/${PROJECT_ID}/sonus/activator:latest",
+        ".",
+      ]
+
+  # Push the container
+  - name: "gcr.io/cloud-builders/docker"
+    args:
+      [
+        "push",
+        "${_REGION}-docker.pkg.dev/${PROJECT_ID}/sonus/activator:${_VERSION}",
+      ]
+  - name: "gcr.io/cloud-builders/docker"
+    args:
+      ["push", "${_REGION}-docker.pkg.dev/${PROJECT_ID}/sonus/activator:latest"]
+
+substitutions:
+  _VERSION: "0.0.1" # Default version
+  _REGION: "REGION" # Default region
+
+artifacts:
+  objects:
+    location: "gs://${PROJECT_ID}-test-reports"
+    paths:
+      - "test-reports/junit.xml"
+
+options:
+  logging: CLOUD_LOGGING_ONLY

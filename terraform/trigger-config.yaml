@@ -1,0 +1,16 @@
+name: "activator-build"
+description: "Trigger for building the activator service"
+disabled: false
+tags: []
+filename: "cloudbuild.yaml"
+createTime: null
+triggerTemplate:
+  projectId: "example-project-id"
+  repoName: "sonus-activator"
+  branchName: "^master$"
+substitutions:
+  _REGION: "REGION"
+  _VERSION: "0.0.1"
+filter: "trigger-activator-build"
+includedFiles:
+  - "**/*"

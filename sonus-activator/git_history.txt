@@ -1,0 +1,137 @@
+commit db90ca48f0ba4585a4ba6fe473dadd351f45a858
+Author: Sonus <sonus>
+Date:   Tue Feb 25 00:17:18 2025 +0100
+
+    feat: Centralize configuration management in activator
+
+commit 585ce8a483d41e0cef0e35ccfa80b9c9f1e3d2de
+Author: Sonus <sonus>
+Date:   Mon Feb 24 20:27:28 2025 +0100
+
+    feat: Improved logging configuration with environment detection
+
+commit a8650e9f9b8680c2209c5ee2527ae081d3d63431
+Author: Sonus <sonus>
+Date:   Mon Feb 24 19:17:53 2025 +0100
+
+    feat: Added SERVICE_ACCOUNT_EMAIL env var and made PUBSUB_CONFIG configurable
+
+commit 38a5772606be64f5d60197fd436fc012d98fca38
+Author: Sonus <sonus>
+Date:   Sun Feb 23 04:51:06 2025 +0100
+
+    chore: Bump version to 0.0.20
+
+commit 8cb0e0afbacb3f1c4a578189a3e0f9fc19cd7c00
+Author: Sonus <sonus>
+Date:   Sun Feb 23 04:42:57 2025 +0100
+
+    chore: Update version to 0.0.19
+
+commit 70f58c5e7f31771107cfbf6c534fec2e072bc0d3
+Author: Sonus <sonus>
+Date:   Sun Feb 23 04:39:28 2025 +0100
+
+    feat: Added .err file checking and improved file status handling
+
+commit c1157f4f2cc71418bb385941a8c3f619e7a2456f
+Author: Sonus <sonus>
+Date:   Fri Feb 21 15:55:09 2025 +0100
+
+    feat: Update Drive API to get file owner instead of first permission
+
+commit c1ebb6c3335018f3565c447ebd1c8eeab7adfe02
+Author: Sonus <sonus>
+Date:   Fri Feb 21 15:33:59 2025 +0100
+
+    docs: Update CHANGELOG with recent versions
+
+commit 654b25a58accb980d44556333083dc8e5431b3b2
+Author: Sonus <sonus>
+Date:   Fri Feb 21 15:29:47 2025 +0100
+
+    feat: Add shared_by information to Pub/Sub messages
+
+commit 58212720ea58a9e1b4a275d65725767629a59fb1
+Author: Sonus <sonus>
+Date:   Fri Feb 21 15:05:51 2025 +0100
+
+    feat: Add detailed logging for Pub/Sub message publishing
+
+commit 36e2e5307f59ebb0efd6bd6a56ad67e800fe28b5
+Author: Sonus <sonus>
+Date:   Fri Feb 21 13:58:09 2025 +0100
+
+    fix: Update Cloud Run job to use TAG_NAME version instead of SHORT_SHA
+
+commit 5c968ba73d56c84d50381deeeb7af7b44bab293a
+Author: Sonus <sonus>
+Date:   Fri Feb 21 13:00:46 2025 +0100
+
+    feat: Integrated Pub/Sub support in activator, updated changelog [0.0.13] preserving full history
+
+commit cf48868d567bb426ca353e1965ced2cab812cd96
+Author: Sonus <sonus>
+Date:   Fri Feb 21 12:00:41 2025 +0100
+
+    feat: Add universal authentication system
+
+commit a21f737c55de39d3fca00a74253746aeb1a3edf4
+Author: Sonus <sonus>
+Date:   Fri Feb 21 02:50:17 2025 +0100
+
+    Simplify Cloud Build configuration to use SHORT_SHA
+
+commit 7ce9a9964f2886372c35c7cb9d75471c7a53e8ea
+Author: Sonus <sonus>
+Date:   Fri Feb 21 02:44:50 2025 +0100
+
+    Fix version extraction in Cloud Build
+
+commit 9c2966064a786991aca9b36b4793814e44850e3a
+Author: Sonus <sonus>
+Date:   Fri Feb 21 02:42:14 2025 +0100
+
+    Use Git tag version in Cloud Build
+
+commit 5ed3ec2a46706a127bbcef566baaee40d4e98644
+Author: Sonus <sonus>
+Date:   Fri Feb 21 02:33:46 2025 +0100
+
+    Use default credentials from Cloud Run environment
+
+commit 3c968267a8d705f533e9e1943d053db6da9e1ffa
+Author: Sonus <sonus>
+Date:   Fri Feb 21 02:21:37 2025 +0100
+
+    Fix Google Drive authentication and add missing dependencies
+
+commit 57f937b44882c1c97620a869d1ce3a94b0f7d4fa
+Author: Sonus <sonus>
+Date:   Fri Feb 21 02:10:04 2025 +0100
+
+    Update version to 0.0.5
+
+commit 27a55228cbe38475b5213cf90e6c89dbcaedfe22
+Author: Sonus <sonus>
+Date:   Fri Feb 21 02:03:17 2025 +0100
+
+    Update CHANGELOG for version 0.0.4
+
+commit e0a6396b3a6bdc6f91022543d1fdd41b4835f3b2
+Author: Sonus <sonus>
+Date:   Fri Feb 21 01:49:19 2025 +0100
+
+    Add CHANGELOG for version 0.0.3
+
+commit cd10d24d27e5ab5d7d821b11230708651cc518d7
+Author: Sonus <sonus>
+Date:   Fri Feb 21 01:41:59 2025 +0100
+
+    Add Cloud Run job update step
+
+commit b3f2227f0d67b58bd85d48357f2cf2ae2a13aa8d
+Author: Sonus <sonus>
+Date:   Fri Feb 21 01:11:45 2025 +0100
+
+    Add Drive scanning functionality

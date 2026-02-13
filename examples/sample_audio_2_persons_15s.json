@@ -1,0 +1,250 @@
+{
+  "segments": [
+    {
+      "start": 0.733,
+      "end": 7.012,
+      "text": " Nauka prawa to nie tylko sale rozpraw i aule wykładowe, a profesorowie nie muszą nauczać tylko ex-katedra.",
+      "words": [
+        {
+          "word": "Nauka",
+          "start": 0.733,
+          "end": 1.034,
+          "score": 0.894,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "prawa",
+          "start": 1.094,
+          "end": 1.415,
+          "score": 0.817,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "to",
+          "start": 1.495,
+          "end": 1.576,
+          "score": 0.93,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "nie",
+          "start": 1.616,
+          "end": 1.736,
+          "score": 0.687,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "tylko",
+          "start": 1.816,
+          "end": 2.117,
+          "score": 0.945,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "sale",
+          "start": 2.198,
+          "end": 2.418,
+          "score": 0.988,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "rozpraw",
+          "start": 2.458,
+          "end": 2.94,
+          "score": 0.934,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "i",
+          "start": 3.02,
+          "end": 3.08,
+          "score": 0.464,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "aule",
+          "start": 3.161,
+          "end": 3.421,
+          "score": 0.873,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "wykładowe,",
+          "start": 3.461,
+          "end": 4.003,
+          "score": 0.937,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "a",
+          "start": 4.063,
+          "end": 4.103,
+          "score": 0.794,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "profesorowie",
+          "start": 4.164,
+          "end": 5.086,
+          "score": 0.9,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "nie",
+          "start": 5.187,
+          "end": 5.327,
+          "score": 0.712,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "muszą",
+          "start": 5.367,
+          "end": 5.648,
+          "score": 0.883,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "nauczać",
+          "start": 5.688,
+          "end": 6.009,
+          "score": 0.963,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "tylko",
+          "start": 6.069,
+          "end": 6.31,
+          "score": 0.933,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "ex-katedra.",
+          "start": 6.37,
+          "end": 7.012,
+          "score": 0.889,
+          "speaker": "SPEAKER_00"
+        }
+      ],
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "start": 8.094,
+      "end": 14.942,
+      "text": " Tak mówi nam opis wydarzenia Legal Cafe zorganizowane przez Europejskie Stowarzyszenie Studentów Prawa.",
+      "words": [
+        {
+          "word": "Tak",
+          "start": 8.094,
+          "end": 8.494,
+          "score": 0.937,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "mówi",
+          "start": 8.555,
+          "end": 8.755,
+          "score": 0.906,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "nam",
+          "start": 8.795,
+          "end": 9.756,
+          "score": 0.783,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "opis",
+          "start": 9.856,
+          "end": 10.076,
+          "score": 0.956,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "wydarzenia",
+          "start": 10.116,
+          "end": 10.677,
+          "score": 0.818,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Legal",
+          "start": 10.717,
+          "end": 11.017,
+          "score": 0.838,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Cafe",
+          "start": 11.077,
+          "end": 11.738,
+          "score": 0.811,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "zorganizowane",
+          "start": 11.798,
+          "end": 12.359,
+          "score": 0.597,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "przez",
+          "start": 12.399,
+          "end": 12.579,
+          "score": 0.928,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Europejskie",
+          "start": 12.639,
+          "end": 13.12,
+          "score": 0.955,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Stowarzyszenie",
+          "start": 13.14,
+          "end": 13.68,
+          "score": 0.843,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Studentów",
+          "start": 13.701,
+          "end": 14.521,
+          "score": 0.916,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Prawa.",
+          "start": 14.642,
+          "end": 14.942,
+          "score": 0.933,
+          "speaker": "SPEAKER_01"
+        }
+      ],
+      "speaker": "SPEAKER_01"
+    }
+  ],
+  "diarization": [
+    {
+      "start": 0.03096875,
+      "end": 0.31784375,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "start": 0.50346875,
+      "end": 9.970343750000001,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "start": 9.970343750000001,
+      "end": 14.965343750000002,
+      "speaker": "SPEAKER_01"
+    }
+  ],
+  "language": "pl",
+  "duration": 15,
+  "file_size_mib": 0.35
+}

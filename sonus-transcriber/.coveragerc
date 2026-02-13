@@ -1,0 +1,44 @@
+[run]
+source = src/transcriber
+omit =
+    src/transcriber/__pycache__/*
+    src/transcriber/tests/*
+    src/transcriber/*/__pycache__/*
+    src/transcriber/*/tests/*
+
+[report]
+exclude_lines =
+    pragma: no cover
+    def __repr__
+    if self.debug:
+    raise NotImplementedError
+    if __name__ == .__main__.:
+    pass
+    raise ImportError
+    except ImportError:
+    raise AssertionError
+
+[html]
+directory = coverage_html
+title = Sonus Transcriber Coverage Report
+
+[xml]
+output = coverage.xml
+
+[paths]
+source =
+    src/transcriber/
+    */site-packages/transcriber/
+
+[coverage:run]
+branch = True
+parallel = True
+concurrency = multiprocessing
+data_file = .coverage
+
+[coverage:report]
+precision = 2
+show_missing = True
+skip_covered = False
+sort = Cover
+fail_under = 80

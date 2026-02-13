@@ -1,0 +1,12 @@
+{
+  "name": "test02",
+  "description": "Większy batch_size",
+  "parameters": {
+    "batch_size": 32,
+    "compute_type": "float32",
+    "chunk_size": 30,
+    "language": "pl"
+  },
+  "timestamp": "2025-02-22T16:04:58.385665",
+  "audio_file": "sample_audio_2_persons.mp3"
+}
